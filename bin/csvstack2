@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'csv'
+
+csv_paths = ARGV
+
+out = $stdout
+
+headers_per_file = csv_paths.inject({}) do |memo, path|
+  memo[path] = CSV.parse_line(File.open(path) { |f| f.gets })
+  memo
+end
+
+maximal_headers = headers_per_file.values.inject(:+).uniq
+
+headers = maximal_headers
+
+out.puts headers.to_csv
+csv_paths.each do |path|
+  CSV.foreach(path, headers: true) do |row|
+    out.puts row.values_at(*headers).to_csv
+  end
+end
+
+out.close

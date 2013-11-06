@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Csvstack2::VERSION
   spec.authors       = ["Seamus Abshere"]
   spec.email         = ["seamus@abshere.net"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Stack CSV files on top of each other. Unlike csvstack, checks column names and reorders if necessary.}
+  spec.summary       = %q{Stack CSV files on top of each other. Unlike csvstack, checks column names and reorders if necessary.}
+  spec.homepage      = "https://github.com/seamusabshere/csvstack2"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

@@ -1,3 +1,3 @@
-module Csvkit2
+module Csvstack2
   VERSION = "0.0.1"
 end

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'csvkit2/version'
+require 'csvstack2/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "csvkit2"
-  spec.version       = Csvkit2::VERSION
+  spec.name          = "csvstack2"
+  spec.version       = Csvstack2::VERSION
   spec.authors       = ["Seamus Abshere"]
   spec.email         = ["seamus@abshere.net"]
   spec.description   = %q{TODO: Write a gem description}

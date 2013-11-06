@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'csvkit2'
+require 'csvstack2'
 
 require 'csv'
 require 'tmpdir'
